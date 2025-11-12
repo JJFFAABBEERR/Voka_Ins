@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" sizes="64x64" href="../Voka23/assets/img/Logo_Conexión_SF.png">  
+    <meta name="description" content="archivo en drive se llama voka">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>📋 Formulario de Registro</h1>
+        <h2>Conexión Vocacional</h2>
+        <div class="success-message" id="successMessage">
+            ✓ Formulario enviado exitosamente
+        </div>
+
+        <form id="registrationForm">
+            <div class="form-group">
+                <label>Nombre Completo <span class="required">*</span></label>
+                <input type="text" id="nombreCompleto" required>
+            </div>
+
+            <div class="form-group">
+                <label>Tipo de Documento <span class="required">*</span></label>
+                <select id="tipoDocumento" required>
+                    <option value="">Seleccione...</option>
+                    <option value="CC">Cédula de Ciudadanía</option>
+                    <option value="TI">Tarjeta de Identidad</option>
+                    <option value="CE">Cédula de Extranjería</option>
+                    <option value="RC">Registro Civil</option>
+                    <option value="PTP">Permiso Temporal Permanencia</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Número de Documento <span class="required">*</span></label>
+                <input type="text" id="nroDocumento" required>
+            </div>
+
+            <!--<div class="form-group">
+                <label>Colegio <span class="required">*</span></label>
+                <input type="text" id="colegio" required>
+            </div>-->
+
+            <div class="form-group">
+                <label>Institución Educativa * <span class="required">*</span></label>
+                <select id="colegio" required>
+                    <option value="">Seleccione...</option>
+                    <option value="Cristo Rey">Cristo Rey</option>
+                    <option value="Santa Sofia">Santa Sofia</option>
+                    <option value="Fabio Vásquez">Fabio Vásquez</option>
+                    <option value="Empresarial">Empresarial</option>
+                    <option value="Juan Manuel">Juan Manuel</option>
+                    <option value="Los Andes">Los Andes</option>
+                    <option value="Agustín Nieto">Agustín Nieto</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Grado <span class="required">*</span></label>
+                <select id="grado" required>
+                    <option value="">Seleccione...</option>
+                    <option value="9A">9A</option>
+                    <option value="9B">9B</option>
+                    <option value="9C">9C</option>
+                    <option value="9D">9D</option>
+                    <option value="9_1°">9_1</option>
+                    <option value="9_2">9_2</option>
+                    <option value="9_3°">9_3</option>
+                    <option value="9_4">9_4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Teléfono <span class="required">*</span></label>
+                <input type="tel" id="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label>Nombre Contacto de Emergencia <span class="required">*</span></label>
+                <input type="text" id="nombreContacto" required>
+            </div>
+
+            <div class="form-group">
+                <label>Teléfono Contacto de Emergencia <span class="required">*</span></label>
+                <input type="tel" id="telefonoContacto" required>
+            </div>
+
+            <div class="priority-section">
+                <h3>🎯 Selección de Programas</h3>
+                <div class="priority-note">
+                    ⚠️ Importante: Debes seleccionar 3 programas diferentes en orden de prioridad
+                </div>
+
+                <div class="form-group">
+                    <label>Primera Opción (Prioridad 1) <span class="required">*</span></label>
+                   <select id="programa1" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Técnico Programación de Aplicaciones para Dispositivos Móviles.">Técnico Programación de Aplicaciones para Dispositivos Móviles</option>
+                        <option value="Técnico Programación para Analítica de Datos">Técnico Programación para Analítica de Datos"</option>
+                        <option value="Técnico Soporte de Topografia y Georeferenciación">Técnico Soporte de Topografia y Georeferenciació</option>
+                        <option value="Técnico en Pintura Arquitectónica y Acabados Especiales">Técnico en Pintura Arquitectónica y Acabados Especiales</option>
+                        <option value="Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaicos">Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaico</option>
+                        <option value="Técnico Mantenimiento de Vehículos Livianos">Técnico Mantenimiento de Vehículos Livianos</option>
+                        <option value="Técnico Mantenimiento de Motocicletas y Motocarros">Técnico Mantenimiento de Motocicletas y Motocarros</option>
+                        <option value="Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas">Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas</option>
+                        <option value="Técnico Dibujo Mecánico">Técnico Dibujo Mecánico</option>
+                        <option value="Técnico en Agrotrónica">Arquitectura</option>
+                        <option value="Técnico en Venta de Productos en Línea">Técnico en Venta de Productos en Línea</option>
+                        <option value="Técnico en Recursos Humanos">Técnico en Recursos Humanos</option>
+                        <option value="Técnico Promoción  de Contenidos en Medios Digitales">Técnico Promoción  de Contenidos en Medios Digitales</option>
+                        <option value="Técnico Operaciones de Comercio Exterior">Técnico Operaciones de Comercio Exterior</option>
+                        <option value="Técnico Nómina y Prestaciones Sociales">Técnico Nómina y Prestaciones Sociales</option>
+                        <option value="Técnico Cocina">Técnico Cocina</option>
+                        <option value="Técnico Asistencia en Organización de Archivos">Técnico Asistencia en Organización de Archivos"</option>
+
+                    </select>
+                    <span class="error" id="error1"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Segunda Opción (Prioridad 2) <span class="required">*</span></label>
+                    <select id="programa2" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Técnico Programación de Aplicaciones para Dispositivos Móviles.">Técnico Programación de Aplicaciones para Dispositivos Móviles</option>
+                        <option value="Técnico Programación para Analítica de Datos">Técnico Programación para Analítica de Datos"</option>
+                        <option value="Técnico Soporte de Topografia y Georeferenciación">Técnico Soporte de Topografia y Georeferenciació</option>
+                        <option value="Técnico en Pintura Arquitectónica y Acabados Especiales">Técnico en Pintura Arquitectónica y Acabados Especiales</option>
+                        <option value="Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaicos">Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaico</option>
+                        <option value="Técnico Mantenimiento de Vehículos Livianos">Técnico Mantenimiento de Vehículos Livianos</option>
+                        <option value="Técnico Mantenimiento de Motocicletas y Motocarros">Técnico Mantenimiento de Motocicletas y Motocarros</option>
+                        <option value="Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas">Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas</option>
+                        <option value="Técnico Dibujo Mecánico">Técnico Dibujo Mecánico</option>
+                        <option value="Técnico en Agrotrónica">Arquitectura</option>
+                        <option value="Técnico en Venta de Productos en Línea">Técnico en Venta de Productos en Línea</option>
+                        <option value="Técnico en Recursos Humanos">Técnico en Recursos Humanos</option>
+                        <option value="Técnico Promoción  de Contenidos en Medios Digitales">Técnico Promoción  de Contenidos en Medios Digitales</option>
+                        <option value="Técnico Operaciones de Comercio Exterior">Técnico Operaciones de Comercio Exterior</option>
+                        <option value="Técnico Nómina y Prestaciones Sociales">Técnico Nómina y Prestaciones Sociales</option>
+                        <option value="Técnico Cocina">Técnico Cocina</option>
+                        <option value="Técnico Asistencia en Organización de Archivos">Técnico Asistencia en Organización de Archivos"</option>
+
+                    </select>
+                    <span class="error" id="error2"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Tercera Opción (Prioridad 3) <span class="required">*</span></label>
+                    <select id="programa3" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Técnico Programación de Aplicaciones para Dispositivos Móviles.">Técnico Programación de Aplicaciones para Dispositivos Móviles</option>
+                        <option value="Técnico Programación para Analítica de Datos">Técnico Programación para Analítica de Datos"</option>
+                        <option value="Técnico Soporte de Topografia y Georeferenciación">Técnico Soporte de Topografia y Georeferenciació</option>
+                        <option value="Técnico en Pintura Arquitectónica y Acabados Especiales">Técnico en Pintura Arquitectónica y Acabados Especiales</option>
+                        <option value="Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaicos">Técnico en Mantenimiento e Instalación de Sistemas Solares Fotovoltaico</option>
+                        <option value="Técnico Mantenimiento de Vehículos Livianos">Técnico Mantenimiento de Vehículos Livianos</option>
+                        <option value="Técnico Mantenimiento de Motocicletas y Motocarros">Técnico Mantenimiento de Motocicletas y Motocarros</option>
+                        <option value="Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas">Técnico Implementación y Mantenimiento de Sistemas de Internet de Las Cosas</option>
+                        <option value="Técnico Dibujo Mecánico">Técnico Dibujo Mecánico</option>
+                        <option value="Técnico en Agrotrónica">Arquitectura</option>
+                        <option value="Técnico en Venta de Productos en Línea">Técnico en Venta de Productos en Línea</option>
+                        <option value="Técnico en Recursos Humanos">Técnico en Recursos Humanos</option>
+                        <option value="Técnico Promoción  de Contenidos en Medios Digitales">Técnico Promoción  de Contenidos en Medios Digitales</option>
+                        <option value="Técnico Operaciones de Comercio Exterior">Técnico Operaciones de Comercio Exterior</option>
+                        <option value="Técnico Nómina y Prestaciones Sociales">Técnico Nómina y Prestaciones Sociales</option>
+                        <option value="Técnico Cocina">Técnico Cocina</option>
+                        <option value="Técnico Asistencia en Organización de Archivos">Técnico Asistencia en Organización de Archivos"</option>
+
+                    </select>
+                    <span class="error" id="error3"></span>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Enviar Formulario</button>
+            <div class="loading" id="loading">Enviando datos...</div>
+           
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
